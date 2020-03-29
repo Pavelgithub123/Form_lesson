@@ -1,0 +1,10 @@
+form,
+input {
+  font-family: Arial;
+  font-size: 18px;
+  color: red;
+  font-style: italic;
+}
+input {
+  display: block;
+}
