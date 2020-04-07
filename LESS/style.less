@@ -3,16 +3,80 @@
 @border: 1px solid black;
 @font-family-form: Arial;
 @font-family-form-size: 18px;
-@font-family-form-color: red;
+@font-family-form-color: black;
 @font-style: italic ;
 
 form, input {
     font-family: @font-family-form;
     font-size: @font-family-form-size;
     color: @font-family-form-color;
-    font-style: @font-style;
-}
-input {
-    display: block;
+    font-style: @font-style;    
 }
 
+form {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+input:focus {
+    border: 3px solid green;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px dotted blue;
+}
+
+legend {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid grey;
+    resize: none;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin : 0 auto 10px auto;
+    width  : 300px;
+    display: block;
+    background-color: honeydew;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+   
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+   
+}
+.spisok {
+    display: block;
+    margin: 10px 0 10px 10px;
+}
+
+progress, meter {
+    display: block;
+}
